@@ -1,0 +1,10 @@
+apiVersion: network.kubesphere.io/v1alpha2
+kind: Eip
+metadata:
+  name: eip-pool
+  namespace: openelb-system
+spec:
+  address: 192.168.31.90-192.168.31.98
+  protocol: layer2
+  disable: false
+  interface: ens32
